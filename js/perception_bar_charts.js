@@ -2,7 +2,8 @@
 var imageArray = [];
 var barSize;
 var barChartGenerator=function(bar_size_in_px){
-var maxNBDataFile = 11;
+// var maxNBDataFile = 179;
+var maxNBDataFile = 3;
 var count = 0;
 var colorNameColumn = "name";
 
@@ -30,7 +31,7 @@ function generateBarChart07(datafile, barSize){
     var margin = { left: 39, right: 39, top: 50, bottom: 40},
     width = (320 - margin.left - margin.right), // 225
 	height = (320 - margin.top - margin.bottom); // 262.5
-
+//23,18,14,11,9,7,5,4,3,2,1
 if(barSize == 23){
 	barPaddingController = 1;
 	barStartingPositionFromTop = 50;
@@ -43,10 +44,63 @@ if(barSize == 23){
 						};
 
 }
+
+if(barSize == 22){
+	barPaddingController = 1.049;
+	barStartingPositionFromTop = 50;
+	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 68, right_X: 295, right_Y: 68 }; //23px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 35,
+						  left_AxisLine_X1: 40, left_AxisLine_Y1: 50, left_AxisLine_X2: 40, left_AxisLine_Y2: 280,
+						  right_AxisLine_X1: 280, right_AxisLine_Y1: 50, right_AxisLine_X2: 280, right_AxisLine_Y2: 280,
+						  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 300,
+						  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 300,
+						};
+
+}
+
+if(barSize == 21){
+	barPaddingController = 1.069;
+	barStartingPositionFromTop = 50;
+	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 68, right_X: 295, right_Y: 68 }; //23px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 35,
+						  left_AxisLine_X1: 40, left_AxisLine_Y1: 50, left_AxisLine_X2: 40, left_AxisLine_Y2: 280,
+						  right_AxisLine_X1: 280, right_AxisLine_Y1: 50, right_AxisLine_X2: 280, right_AxisLine_Y2: 280,
+						  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 300,
+						  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 300,
+						};
+}
+
+if(barSize == 20){
+	barPaddingController = 1.089;
+	barStartingPositionFromTop = 50;
+	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 68, right_X: 295, right_Y: 68 }; //23px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 35,
+						  left_AxisLine_X1: 40, left_AxisLine_Y1: 50, left_AxisLine_X2: 40, left_AxisLine_Y2: 280,
+						  right_AxisLine_X1: 280, right_AxisLine_Y1: 50, right_AxisLine_X2: 280, right_AxisLine_Y2: 280,
+						  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 300,
+						  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 300,
+						};
+
+}
+
+if(barSize == 19){
+	barPaddingController = 1.099;
+	barStartingPositionFromTop = 50;
+	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 68, right_X: 295, right_Y: 68 }; //23px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 35,
+						  left_AxisLine_X1: 40, left_AxisLine_Y1: 50, left_AxisLine_X2: 40, left_AxisLine_Y2: 280,
+						  right_AxisLine_X1: 280, right_AxisLine_Y1: 50, right_AxisLine_X2: 280, right_AxisLine_Y2: 280,
+						  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 300,
+						  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 300,
+						};
+
+}
+
+
 if(barSize == 18){
 	barPaddingController = 1.2;
 	barStartingPositionFromTop = 62; // +12px
-	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 78, right_X: 295, right_Y: 78 }; //20px (x,y) = (0,12), (12, 73)  // Y+10px
+	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 78, right_X: 295, right_Y: 78 }; //10px (x,y) = (0,12), (12, 73)  // Y+10px
 	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 45, // Y+10px 
 					  left_AxisLine_X1: 40, left_AxisLine_Y1: 55, left_AxisLine_X2: 40, left_AxisLine_Y2: 265,  // Y1+5 Y2-15
 					  right_AxisLine_X1: 280, right_AxisLine_Y1: 55, right_AxisLine_X2: 280, right_AxisLine_Y2: 265,  // Y1+5 Y2-15
@@ -54,6 +108,44 @@ if(barSize == 18){
 					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 285, // Y-15
 					};
 }
+
+if(barSize == 17){
+	barPaddingController = 1.249;
+	barStartingPositionFromTop = 62; // +12px
+	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 78, right_X: 295, right_Y: 78 }; //10px (x,y) = (0,12), (12, 73)  // Y+10px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 45, // Y+10px 
+					  left_AxisLine_X1: 40, left_AxisLine_Y1: 55, left_AxisLine_X2: 40, left_AxisLine_Y2: 265,  // Y1+5 Y2-15
+					  right_AxisLine_X1: 280, right_AxisLine_Y1: 55, right_AxisLine_X2: 280, right_AxisLine_Y2: 265,  // Y1+5 Y2-15
+					  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 285, // Y-15
+					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 285, // Y-15
+					};
+}
+
+if(barSize == 16){
+	barPaddingController = 1.269;
+	barStartingPositionFromTop = 62; // +12px
+	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 78, right_X: 295, right_Y: 78 }; //10px (x,y) = (0,12), (12, 73)  // Y+10px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 45, // Y+10px 
+					  left_AxisLine_X1: 40, left_AxisLine_Y1: 55, left_AxisLine_X2: 40, left_AxisLine_Y2: 265,  // Y1+5 Y2-15
+					  right_AxisLine_X1: 280, right_AxisLine_Y1: 55, right_AxisLine_X2: 280, right_AxisLine_Y2: 265,  // Y1+5 Y2-15
+					  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 285, // Y-15
+					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 285, // Y-15
+					};
+}
+
+if(barSize == 15){
+	barPaddingController = 1.349;
+	barStartingPositionFromTop = 62; // +12px
+	barWeekDayNameLabel = { fontSize: 16, left_X: 12, left_Y: 78, right_X: 295, right_Y: 78 }; //10px (x,y) = (0,12), (12, 73)  // Y+10px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 45, // Y+10px 
+					  left_AxisLine_X1: 40, left_AxisLine_Y1: 55, left_AxisLine_X2: 40, left_AxisLine_Y2: 265,  // Y1+5 Y2-15
+					  right_AxisLine_X1: 280, right_AxisLine_Y1: 55, right_AxisLine_X2: 280, right_AxisLine_Y2: 265,  // Y1+5 Y2-15
+					  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 285, // Y-15
+					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 285, // Y-15
+					};
+}
+
+
 if(barSize == 14){
 	barPaddingController = 1.4;
 	barStartingPositionFromTop = 74; // +12+12px
@@ -65,6 +157,33 @@ if(barSize == 14){
 					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 270,// Y-15-15
 					};
 }
+
+if(barSize == 13){
+	barPaddingController = 1.449;
+	barStartingPositionFromTop = 74; // +12+12px
+	barWeekDayNameLabel = { fontSize: 13, left_X: 12, left_Y: 86, right_X: 295, right_Y: 86 }; //20px (x,y) = (0,12), (12, 73)  //font=-3 //- Y+10+10px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 55, // Y+10+10px 
+					  left_AxisLine_X1: 40, left_AxisLine_Y1: 60, left_AxisLine_X2: 40, left_AxisLine_Y2: 250,   // Y1+5+5 Y2-15-15
+					  right_AxisLine_X1: 280, right_AxisLine_Y1: 60, right_AxisLine_X2: 280, right_AxisLine_Y2: 250, // Y1+5+5 Y2-15-15
+					  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 270,// Y-15-15
+					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 270,// Y-15-15
+					};
+}
+
+if(barSize == 12){
+	barPaddingController = 1.549;
+	barStartingPositionFromTop = 74; // +12+12px
+	barWeekDayNameLabel = { fontSize: 13, left_X: 12, left_Y: 86, right_X: 295, right_Y: 86 }; //20px (x,y) = (0,12), (12, 73)  //font=-3 //- Y+10+10px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 55, // Y+10+10px 
+					  left_AxisLine_X1: 40, left_AxisLine_Y1: 60, left_AxisLine_X2: 40, left_AxisLine_Y2: 250,   // Y1+5+5 Y2-15-15
+					  right_AxisLine_X1: 280, right_AxisLine_Y1: 60, right_AxisLine_X2: 280, right_AxisLine_Y2: 250, // Y1+5+5 Y2-15-15
+					  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 270,// Y-15-15
+					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 270,// Y-15-15
+					};
+}
+
+
+
 if(barSize == 11){
 	barPaddingController = 1.6;
 	barStartingPositionFromTop = 86; // +12+12+12px
@@ -76,6 +195,20 @@ if(barSize == 11){
 					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 250,// Y-15-15-20px
 					};
 }
+
+if(barSize == 10){
+	barPaddingController = 1.649;
+	barStartingPositionFromTop = 86; // +12+12+12px
+	barWeekDayNameLabel = { fontSize: 13, left_X: 12, left_Y: 96, right_X: 295, right_Y: 96 }; //20px (x,y) = (0,12), (12, 73) //font=-3 //- Y+10+10+10px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 75, // Y+10+10+20px 
+					  left_AxisLine_X1: 40, left_AxisLine_Y1: 85, left_AxisLine_X2: 40, left_AxisLine_Y2: 230,   // Y1+5+5+25 Y2-15-15-20
+					  right_AxisLine_X1: 280, right_AxisLine_Y1: 85, right_AxisLine_X2: 280, right_AxisLine_Y2: 230, // Y1+5+5+25 Y2-15-15-20
+					  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 250,// Y-15-15-20px
+					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 250,// Y-15-15-20px
+					};
+}
+
+
 if(barSize == 9){
 	barPaddingController = 1.8;
 	barStartingPositionFromTop = 98; // +12+12+12+12px
@@ -87,6 +220,19 @@ if(barSize == 9){
 					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 250,	// Y-15-15-20px
 					};
 }
+
+if(barSize == 8){
+	barPaddingController = 1.849;
+	barStartingPositionFromTop = 98; // +12+12+12+12px
+	barWeekDayNameLabel = { fontSize: 11, left_X: 12, left_Y: 106, right_X: 295, right_Y: 106 }; //20px (x,y) = (0,12), (12, 73) //font=-3-2 //- Y+10+10+10+10+10px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 85, // Y+10+10+20+10px 
+					  left_AxisLine_X1: 40, left_AxisLine_Y1: 95, left_AxisLine_X2: 40, left_AxisLine_Y2: 230,   // Y1+5+5+25+10 Y2-15-15-20-0
+					  right_AxisLine_X1: 280, right_AxisLine_Y1: 95, right_AxisLine_X2: 280, right_AxisLine_Y2: 230, // Y1+5+5+25 Y2-15-15-20
+					  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 250,	// Y-15-15-20px
+					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 250,	// Y-15-15-20px
+					};
+}
+
 if(barSize == 7){
 	barPaddingController = 2;
 	barStartingPositionFromTop = 110; // +12+12+12+12+12px
@@ -98,6 +244,19 @@ if(barSize == 7){
 					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 245,	// Y-15-15-20-5px
 					};
 }
+
+if(barSize == 6){
+	barPaddingController = 2.049;
+	barStartingPositionFromTop = 110; // +12+12+12+12+12px
+	barWeekDayNameLabel = { fontSize: 11, left_X: 12, left_Y: 117, right_X: 295, right_Y: 117 }; //20px (x,y) = (0,12), (12, 73) //font=-3-2 //- Y+10+10+10+10+10+11px
+	chartLabeling = { headerFontSize: 20, header_X: 85, header_Y: 95, // Y+10+10+20+10+10px 
+					  left_AxisLine_X1: 40, left_AxisLine_Y1: 110, left_AxisLine_X2: 40, left_AxisLine_Y2: 225,   // Y1+5+5+25+10+15 // Y2-15-15-20-0-5
+					  right_AxisLine_X1: 280, right_AxisLine_Y1: 110, right_AxisLine_X2: 280, right_AxisLine_Y2: 225, // Y1+5+5+25+10+15 // Y2-15-15-20-0-5
+					  left_AxisLine_text_FontSize: 16, left_AxisLine_text_X: 20, left_AxisLine_text_Y: 245,	// Y-15-15-20-5px
+					  right_AxisLine_text_FontSize: 16, right_AxisLine_text_X: 260, right_AxisLine_text_Y: 245,	// Y-15-15-20-5px
+					};
+}
+
 if(barSize == 5){
 	barPaddingController = 2.2;
 	barStartingPositionFromTop = 120; // +12+12+12+12+12+10px
@@ -173,7 +332,7 @@ if(barSize == 1){
 
 		var x = d3.scaleLinear()
 				.domain([0, d3.max(data, function (d) {return d.value;})])
-				.rangeRound([height, 10]); /// 10 / 0
+				.rangeRound([height, 0]); /// 10 / 0
 
 		var y = d3.scaleBand()
 			.domain(data.map(function(d) { return d.name; })) 
