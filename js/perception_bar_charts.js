@@ -2,8 +2,8 @@
 var imageArray = [];
 var barSize;
 var barChartGenerator=function(bar_size_in_px){
-// var maxNBDataFile = 179;
-var maxNBDataFile = 3;
+var maxNBDataFile = 179;
+//var maxNBDataFile = 3;
 var count = 0;
 var colorNameColumn = "name";
 
