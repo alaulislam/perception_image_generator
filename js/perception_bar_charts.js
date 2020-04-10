@@ -341,7 +341,8 @@ if(barSize == 1){
 
 		var colorScale = d3.scaleOrdinal()
 			.domain(data.map(function (d){return d[colorNameColumn]; }))
-			.range(["#2390F4", "#2390F4", "#2390F4", "#2390F4", "#2390F4", "#0064B9", "#0064B9"]);
+			//.range(["#2390F4", "#2390F4", "#2390F4", "#2390F4", "#2390F4", "#0064B9", "#0064B9"]);
+			.range(["#ff008b", "#ff008b", "#ff008b", "#ff008b", "#ff008b", "#a21d65", "#a21d65"]);
 
 
 			barChartLabeling(chart, chartLabeling);
